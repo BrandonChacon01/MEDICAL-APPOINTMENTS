@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas ISSSET</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="src/script.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navegacion">
+        <p class="cinta">Citas ISSSET</p>
+        <div class="botones1">
+            <a href="medico/index.html"><button class="enlaces"> Medico</button></a>
+            <a href="index.html"><button  class="enlaces">Cita</button></a>
+            <script type="text/javascript" src="script.js"></script>
+        </div>
+    </nav>
+    <header class="content">
+        <div class="lado-izquierdo">
+            <img src="img/cruz.jpeg" alt="Logo ISSSET">
+        </div>
+
+        <div class="lado-derecho">
+            <h1 class="title-froms">¡Bienvenido!</h1>
+            <p class="text-froms">Por favor, ingresa tus datos para poder agendar una cita.</p>
+                <input class="in-one" type="text" id="nombre" placeholder="Nombre y apellido" required>
+                <input class="in-one" type="text" id="curp" placeholder="CURP" required>
+                <input class="in-one" type="text" id="nss" placeholder="N° Seguro Social" required>
+                <br>
+                <input class="in-two" type="text" id="email" placeholder="Correo" required>
+                <select name="medico" id="medico" class="in-two">
+                    <option>Médico de cabecéra</option>
+                    <option>DR. Dragoberto P.S.</option>
+                </select>
+                <br>
+                <textarea class="in-three" id="motivo" placeholder="Motivo de la consulta" required></textarea>
+                <button class="button-froms" onclick="agendar()">Agendar cita</button>
+        </div>
+    </header>
+</body>
+</html>
